@@ -26,21 +26,13 @@ class ConsoleInteractor {
     }
 
     private void init() {
-        System.out.print("""
-                Enter number what do you want to do:
-                1 - Show current database
-                2 - Add job manually
-                3 - Diagnosis
-                4 - Fully clear database 
-                5 - Get average repair price by breakdown 
-                6 - Get works by date
-                7 - Exit
-                """);
+        System.out.println("\nEnter number what do you want to do:\n1 - Show current database\n2 - Add job manually\n3 - Diagnosis\n4 - Fully clear database\n5 - Get average repair price by breakdown \n6 - Get works by date\n7 - Exit");
         int num;
         try {
             num = scanner.nextInt();
         } catch (InputMismatchException e) {
-            System.out.println("Very witty \uD83E\uDD26");
+            scanner.next();
+            System.out.println("\nVery witty");
             init();
             return;
         }

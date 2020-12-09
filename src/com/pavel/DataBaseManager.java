@@ -1,7 +1,6 @@
 package com.pavel;
 
 import com.pavel.models.Job;
-import com.pavel.utils.Utils;
 
 import java.sql.*;
 import java.text.ParseException;

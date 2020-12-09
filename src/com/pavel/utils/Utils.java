@@ -37,5 +37,4 @@ public class Utils {
     public static Date parse(String string) throws ParseException {
         return df.parse(string);
     }
-
 }

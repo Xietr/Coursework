@@ -31,12 +31,10 @@ public abstract class Master {
 
     public Integer repairPrice(BreakdownType breakdownType) {
         switch (breakdownType) {
-            case HARDWARE -> {
+            case HARDWARE:
                 return randInt(minPrice() * 2, maxPrice() * 2);
-            }
-            case SOFTWARE -> {
+            case SOFTWARE:
                 return randInt(minPrice(), maxPrice() / 2);
-            }
         }
         return 0;
     }
